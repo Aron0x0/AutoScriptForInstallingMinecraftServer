@@ -44,3 +44,24 @@ $HOME/minecraft/
 chmod +x install.sh
 ./install.sh
 ```
+
+---
+
+## 🚀 Parameters
+
+- Start A Screen Before Running The Minecraft Server.
+```bash
+screen -S bedrock #Always Name it like this
+```
+- Run Minecraft Server.
+```bash
+cd $HOME/minecraft/Server
+./bedrock_server
+```
+- To Dettach Safely Use The (Ctrl + A and D).
+
+- Manually Running Backup Worlds
+```bash
+cd $HOME/minecraft
+./autobackup.sh
+```

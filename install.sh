@@ -14,7 +14,6 @@ SERVER_DIR="$ROOT_DIR/Server"
 BACKUP_DIR="$ROOT_DIR/WorldsBackup"
 
 mkdir -p "$SERVER_DIR" "$BACKUP_DIR"
-mv 
 
 cd "$SERVER_DIR"
 wget -O bedrock.zip "$MINECRAFT_SERVER_LINK"

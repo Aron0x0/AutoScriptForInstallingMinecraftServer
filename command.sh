@@ -8,4 +8,4 @@ if [ -z "$COMMAND" ]; then
   exit 1
 fi
 
-screen -S "$SESSION" -X stuff "$COMMAND$(printf \\r)"
+screen -S "$SESSION" -X stuff "$COMMAND$(printf '\r')"

@@ -13,7 +13,7 @@ mkdir -p "$BACKUP_DIR"
 $CMD say "§6Running World Backup..."
 sleep 5
 $CMD say "§4Expect some lag..."
-sleep 1
+sleep 2
 $CMD save hold
 
 sleep 15
@@ -21,10 +21,12 @@ sleep 15
 tar --warning=no-file-changed -czf \
 "$BACKUP_DIR/bedrock_world_$(date +%F_%H-%M-%S).tar.gz" \
 -C "$SERVER_DIR/worlds" "$WORLD_NAME"
-sleep 1
+sleep 2
 
 $CMD save resume
 $CMD say "§aBackup Completed Successfully!"
-sleep 1
+sleep 2
 
 echo "Backup Finished Safely."
+
+ls -1t "$BACKUP_DIR"/bedrock_world_*.tar.gz | tail -n +6 | xargs -r rm --

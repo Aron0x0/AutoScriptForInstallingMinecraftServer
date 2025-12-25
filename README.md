@@ -1,5 +1,7 @@
 # Minecraft Bedrock Auto Backup & Installer Script
 
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-000000?style=flat&logo=github&logoColor=white)](https://github.com/Aron0x0/AutoScriptForInstallingMinecraftServer)
+
 This project provides a simple **auto installer**, **command helper**, and **world backup script** for a Minecraft Bedrock Dedicated Server running on Linux.
 
 Designed for **screen-based servers** (VPS, AWS EC2, Debian/Ubuntu).
@@ -58,7 +60,10 @@ screen -S bedrock #Always Name it like this
 cd $HOME/minecraft/Server
 ./bedrock_server
 ```
-- To Dettach Safely Use The (Ctrl + A and D).
+- To Detach safely:
+```bash
+# Press Ctrl + A, then D
+```
 
 - Manually Running Backup Worlds
 ```bash

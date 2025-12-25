@@ -4,6 +4,7 @@ set -e
 echo "Backup Script Started"
 
 ROOT_DIR="$HOME/minecraft"
+SERVER_DIR="$ROOT_DIR/Server"
 BACKUP_DIR="$ROOT_DIR/WorldsBackup"
 WORLD_NAME="Bedrock level"
 
@@ -18,7 +19,7 @@ sleep 15
 
 tar --warning=no-file-changed -czf \
 "$BACKUP_DIR/bedrock_world_$(date +%F_%H-%M-%S).tar.gz" \
--C "$ROOT_DIR/worlds" "$WORLD_NAME"
+-C "$SERVER_DIR/worlds" "$WORLD_NAME"
 
 ./command.sh save resume
 ./command.sh say "§aBackup Completed Successfully!"

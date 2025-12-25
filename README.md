@@ -34,8 +34,12 @@ $HOME/minecraft/
 ├── WorldsBackup/     # Backup archives (.tar.gz)
 ├── autobackup.sh
 └── command.sh
+```
 
-## 📦 Installtion
+---
+
+## 📦 Installation
+
 ```bash
 chmod +x install.sh
 ./install.sh

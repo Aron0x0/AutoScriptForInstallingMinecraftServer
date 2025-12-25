@@ -5,7 +5,7 @@ echo "Running AutoScript Installer For Minecraft Bedrock Server"
 sleep 3
 
 apt update -y && apt upgrade -y
-apt install unzip screen wget -y
+apt install unzip screen wget cron -y
 
 MINECRAFT_SERVER_LINK="https://www.minecraft.net/bedrockdedicatedserver/bin-linux/bedrock-server-1.21.131.1.zip"
 
@@ -14,6 +14,9 @@ SERVER_DIR="$ROOT_DIR/Server"
 BACKUP_DIR="$ROOT_DIR/WorldsBackup"
 
 mkdir -p "$SERVER_DIR" "$BACKUP_DIR"
+
+systemctl enable cron
+systemctl start cron
 
 cd "$SERVER_DIR"
 wget -O bedrock.zip "$MINECRAFT_SERVER_LINK"

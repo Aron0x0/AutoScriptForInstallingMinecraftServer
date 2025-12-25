@@ -70,3 +70,24 @@ cd $HOME/minecraft/Server
 cd $HOME/minecraft
 ./autobackup.sh
 ```
+
+- Crontab Auto Backup
+```bash
+systemctl status cron #Check if the crontab is running.
+systemctl start cron #if cron is NOT running.
+systemctl enable cron #Remember If NOT running.  
+
+# Setting Up a time
+crontab -l # If you see “no crontab for root” is working fine leave it.
+crontab -e # Select what editor u want to use.
+# Put this line of code
+0 */2 * * * /root/minecraft/autobackup.sh >> /root/minecraft/backup.log 2>&1
+
+# Additional Info
+* * * * *  command_to_run
+│ │ │ │ │
+│ │ │ │ └─ day of the week (0-7, 0 or 7 = Sunday)
+│ │ │ └── month (1-12)
+│ │ └── day of the month (1-31)
+│ └── hour (0-23)
+└── minute (0-59)

@@ -14,11 +14,15 @@ SERVER_DIR="$ROOT_DIR/Server"
 BACKUP_DIR="$ROOT_DIR/WorldsBackup"
 
 mkdir -p "$SERVER_DIR" "$BACKUP_DIR"
+mv 
 
 cd "$SERVER_DIR"
 wget -O bedrock.zip "$MINECRAFT_SERVER_LINK"
 unzip bedrock.zip
 rm -f bedrock.zip
+
+cp "$HOME/AutoScriptForInstallingMinecraftServer/autobackup.sh" "$ROOT_DIR/"
+cp "$HOME/AutoScriptForInstallingMinecraftServer/command.sh" "$ROOT_DIR/"
 
 chmod +x "$ROOT_DIR"/autobackup.sh "$ROOT_DIR"/command.sh
 

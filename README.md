@@ -64,6 +64,11 @@ cd $HOME/minecraft/Server
 ```bash
 # Press Ctrl + A, then D
 ```
+- To Re-Attach Safely:
+```bash
+screen -ls # Check if the screen is running the 'bedrock'
+screen -r bedrockd
+```
 
 - Manually Running Backup Worlds
 ```bash

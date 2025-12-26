@@ -32,10 +32,9 @@ Designed for **screen-based servers** (VPS, AWS EC2, Debian/Ubuntu).
 ```text
 $HOME/minecraft/
 ├── Server/           # Bedrock server files
-├── worlds/           # World data
-├── WorldsBackup/     # Backup archives (.tar.gz)
-├── autobackup.sh
-└── command.sh
+├── WorldsBackup/     # Worlds Backup archives (.tar.gz)
+├── autobackup.sh     # Auto Backup Script  for Crontab 
+└── command.sh        # Run Command Outside The Minecraft Server Console.
 ```
 
 ---

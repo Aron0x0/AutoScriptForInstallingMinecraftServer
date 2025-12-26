@@ -1,6 +1,6 @@
 # Minecraft Bedrock Auto Backup & Installer Script
 
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-000000?style=flat&logo=github&logoColor=white)](https://github.com/Aron0x0/AutoScriptForInstallingMinecraftServer)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-000000?style=flat&logo=github&logoColor=white)](https://github.com/Aron0x0)
 
 This project provides a simple **auto installer**, **command helper**, and **world backup script** for a Minecraft Bedrock Dedicated Server running on Linux.
 
